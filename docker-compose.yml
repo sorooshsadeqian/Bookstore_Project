@@ -2,6 +2,9 @@ version: '3.7'
 
 services:
   web:
+    environment:
+      - NEW_SECRET_KEY=django-insecure-7-5f&fuiav@k#3f^hm&5-55u3ky2i#4g#*-ly5_3+_(wc#z_$y
+      - DEBUG=1
     build: .
     command: python /code/manage.py runserver 0.0.0.0:8000
     volumes:
