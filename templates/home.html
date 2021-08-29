@@ -1,9 +1,11 @@
+
 {% extends '_base.html' %}
 {% load static %}
 
 {% block title %}Home{% endblock title %}
 
 {% block content %}
+    <body>
     <h1>Homepage</h1>
     <img class="bookcover" src="{% static 'images/bookcoverone.jpg' %}">
 
@@ -14,4 +16,8 @@
         <a href="{% url 'account_login' %}">Log In</a> |
         <a href="{% url 'account_signup' %}">Sign Up</a>
     {% endif %}
+    </body>
 {% endblock content %}
+
+
+
