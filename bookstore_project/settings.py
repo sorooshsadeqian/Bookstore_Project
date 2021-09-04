@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'pages.apps.PagesConfig',
     'books.apps.BooksConfig',
     'django.contrib.sites',
+    'orders.apps.OrdersConfig',
 
     'crispy_forms',
     'allauth',
