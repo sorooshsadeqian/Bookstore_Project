@@ -14,7 +14,7 @@ class BookTests(TestCase):
         )
 
         self.special_permission = Permission.objects.get(codename='special_status')
-
+        print(self.special_permission)
         self.user = get_user_model().objects.create_user(
             username="reviewuser",
             email="reviewuser@gmail.com",
